@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Signin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+
+    <!-- font-awesome -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+
+          <form id="signin" class="form-signin">
+                <h4 class="form-signin-heading">We value your feedback</h4>
+                <i class="fa fa-heart"></i>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <small id="emailHelp" class="form-text text-muted">Email; hirejulius@gmail.com, Password: 123456</small>
+          </form>
+
+        </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- I will not use jQuery, it is not JavaScript -->
+    <script>
+    // i dont usually do this, but its for demo purposes
+    var username = "hirejulius@gmail.com";
+    var password = "123456";
+    document.querySelector("button").onclick = function () {
+        var emailInput = document.querySelector("#inputEmail").value;
+        var passwordInput = document.querySelector("#inputPassword").value;
+        if(emailInput == username && passwordInput == password) {
+            alert("Credentials are good, since i have no server :(  just open home.html manually");
+        }
+        else {
+            alert("The credentials are bellow the submit, try again");
+        }
+    };
+    </script>
+  </body>
+</html>

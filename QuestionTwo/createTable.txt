@@ -1,0 +1,26 @@
+CREATE TABLE harvestdata
+(
+    id serial not null,
+    farmerName character varying(200),
+    farmManagement character varying(50),
+    crop character varying(50),
+    variety character varying(50),
+    cropSystem character varying(50),
+    plotSize character varying(50),
+    spacing character varying(50),
+    harvestDate date,
+    samplingDate date,
+    standCountAtHarvest integer,
+    noOfPlants integer,
+    totalBiomassFwt decimal,
+    totalGrainFwt decimal,
+    totalStemsShelledPodsFwt decimal,
+    stemsShelledPodsSampleFwt integer,
+    stemsShelledPodsSampleOvenDwt integer,
+    feildGrainSampleFwt integer,
+    feildGrainSampleOvenDwt integer,
+    totalStemsShelledPodsOvenDwt decimal,
+    totalGrainOvenDwt decimal,
+    totalBioMass decimal,
+    CONSTRAINT harvestdata_pkey PRIMARY KEY (id)
+)

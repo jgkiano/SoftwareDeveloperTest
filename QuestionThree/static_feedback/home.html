@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>What Do You Think Of Julius?</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+      <div id="feedbackBody" class="container-fluid">
+          <h1>How well do you feel about Julius?</h2>
+          <div id="feedback">
+              <img src="https://goo.gl/g7UoQO" alt="Julius Kiano">
+              <div id="about-me" class="pull-xs-right">
+                  <p><em>Title</em></p>
+                  <h4>Web/Mobile Developer, UI/UX Designer</h4>
+                  <p><em>Favorite Color</em></p>
+                  <h4>#D50000</h4>
+              </div>
+              <form action="">
+                  <div class="row">
+                      <div class="form-group col-md-6">
+                          <input type="text" name="name" required class="form-control" placeholder="Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                          <input type="tel" name="phone" required pattern="^\d{3}-\d{3}-\d{6}$" class="form-control" placeholder="254-722-123456">
+                      </div>
+                      <div class="form-group col-md-6">
+                          <select class="form-control" name="neighbourhood" id="neighbourhood">
+                              <option value="" selected disabled>Select Your Hood</option>
+                              <option value="Madaraka">Madaraka</option>
+                              <option value="South B">South B</option>
+                              <option value="Kileleshwa">Kileleshwa</option>
+                              <option value="Rongai">Rongai</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <select class="form-control" name="rating" id="rating">
+                              <option value="" selected disabled>Rate</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-md-12">
+                          <textarea name="textdata" required placeholder="Some good things about me" class="form-control" rows="8" cols="40"></textarea>
+                      </div>
+                      <div class="form-group col-md-12">
+                          <button type="submit" class="btn btn-secondary" name="button">Submit</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>

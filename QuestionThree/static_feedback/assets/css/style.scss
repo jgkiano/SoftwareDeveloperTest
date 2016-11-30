@@ -1,0 +1,61 @@
+@import "partials/mixins";
+@import "partials/variables";
+html {
+    body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include fullBackPic($feedbackPic);
+        #signin{
+            border-top: 4px solid #025AA5;
+            background: white;
+            text-align: center;
+            h4 {
+                text-align: center;
+            }
+        }
+        #feedbackBody {
+            h1,h2,h3,h4{
+                text-align: center;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 300;
+                color: #fff;
+            }
+        }
+        #feedback {
+            padding: 16px;
+            margin: 0 auto;
+            width: 752px;
+            max-width: 90%;
+            height: 680px;
+            border-radius: 2px;
+            background: white;
+            h4 {
+                color: #000;
+                font-size: 1.2em;
+                text-align: left;
+            }
+            form {
+                padding-top: 8px;
+                height: 200px;
+            }
+            img {
+                margin: 0 auto;
+                width: 200px;
+                border-radius: 50%;
+            }
+            .form-control {
+                border: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            .btn-secondary {
+                width: 100%;
+            }
+        }
+    }
+}

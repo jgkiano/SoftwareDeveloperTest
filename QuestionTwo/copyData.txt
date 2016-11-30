@@ -1,0 +1,25 @@
+COPY harvestdata
+(
+    farmerName,
+    farmManagement,
+    crop,
+    variety,
+    cropSystem,
+    plotSize,
+    spacing,
+    harvestDate,
+    samplingDate,
+    standCountAtHarvest,
+    noOfPlants,
+    totalBiomassFwt,
+    totalGrainFwt,
+    totalStemsShelledPodsFwt,
+    stemsShelledPodsSampleFwt,
+    stemsShelledPodsSampleOvenDwt,
+    feildGrainSampleFwt,
+    feildGrainSampleOvenDwt,
+    totalStemsShelledPodsOvenDwt,
+    totalGrainOvenDwt,
+    totalBioMass
+)
+FROM 'C:\temp\data.csv' DELIMITER ',' CSV HEADER;

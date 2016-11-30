@@ -1,0 +1,17 @@
+CREATE VIEW SORTED_VIEW AS
+SELECT * FROM  harvestdata
+ORDER BY harvestDate;
+
+CREATE VIEW HIGHESTBIOMASS AS
+SELECT farmerName
+FROM harvestdata
+WHERE totalBioMass = (SELECT max(totalBioMass) FROM harvestdata);
+
+CREATE VIEW LOWESTBIOMASS AS
+SELECT farmerName
+FROM harvestdata
+WHERE totalBioMass = (SELECT min(totalBioMass) FROM harvestdata);
+
+CREATE VIEW AVGHARVEST AS
+SELECT AVG (noOfPlants)
+FROM harvestdata
