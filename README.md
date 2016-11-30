@@ -1,2 +1,2 @@
 # SoftwareDeveloperTest
-Solutions Code to the software development test
+Solution Code to the software development test
